@@ -23,6 +23,7 @@ Follow idiomatic Go practices and community standards when writing Go code. Thes
 - Prefer standard library solutions over custom implementations when functionality exists
 - Write comments in English by default; translate only upon user request
 - Avoid using emoji in code and comments
+- Follow [Go modernize](https://pkg.go.dev/golang.org/x/tools/go/analysis/passes/modernize) guidelines
 
 ## Naming Conventions
 
@@ -34,7 +35,8 @@ Follow idiomatic Go practices and community standards when writing Go code. Thes
 - Avoid generic names like `util`, `common`, or `base`
 - Package names should be singular, not plural
 
-#### Package Declaration Rules (CRITICAL):
+#### Package Declaration Rules (CRITICAL)
+
 - **NEVER duplicate `package` declarations** - each Go file must have exactly ONE `package` line
 - When editing an existing `.go` file:
   - **PRESERVE** the existing `package` declaration - do not add another one
